@@ -1,0 +1,20 @@
+{
+  "name": "website-game-phaser",
+  "version": "1.0.0",
+  "description": "Website yang berisi games yang dibangun dengan framework Phaser.js dan juga berisi tools lainnya.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitri-puspitasari/website-game-phaser.git"
+  },
+  "author": "fitri-puspitasari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fitri-puspitasari/website-game-phaser/issues"
+  },
+  "homepage": "https://github.com/fitri-puspitasari/website-game-phaser#readme",
+  "type": "module"
+}
