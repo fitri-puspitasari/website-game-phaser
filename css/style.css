@@ -245,7 +245,7 @@ h1 {
     font-weight: 400;
 }
 
-.feature__card button {
+.feature__card a {
     border-radius: 7px;
     padding-block: 10px;
     padding-inline: 15px;
@@ -256,7 +256,7 @@ h1 {
     color: var(--sgames-main);
 }
 
-.sgames-card button {
+.sgames-card a {
     border: solid 3px var(--sgames-main);
     color: var(--sgames-main);
 }
@@ -265,7 +265,7 @@ h1 {
     color: var(--egames-main);
 }
 
-.egames-card button {
+.egames-card a {
     border: solid 3px var(--egames-main);
     color: var(--egames-main);
 }
@@ -274,7 +274,7 @@ h1 {
     color: var(--tools-main);
 }
 
-.tools-card button {
+.tools-card a {
     border: solid 3px var(--tools-main);
     color: var(--tools-main);
 }

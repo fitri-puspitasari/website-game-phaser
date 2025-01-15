@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nama-website</title>
+    <title></title>
+    <meta name="description" content="">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,22 +18,22 @@
             <div class="header__container">
                 <h1>nama-website</h1>
                 <nav class="header__navbar">
-                    <a href="/" class="header__nav__active">Home</a>
+                    <a href="/" class="header__nav__active" onclick="route()">Home</a>
                     <button class="navbar__feature-button button-like-a">Feature</button>
                     <div class="navbar__feature-links" style="display: none;">
-                        <a href="/simple-games">Simple Games</a>
-                        <a href="/edu-games">Educational Games</a>
-                        <a href="/tools">Tools</a>
+                        <a href="/simple-games" onclick="route()">Simple Games</a>
+                        <a href="/edu-games" onclick="route()">Educational Games</a>
+                        <a href="/tools" onclick="route()">Tools</a>
                     </div>
-                    <a href="/blog">Blog</a>
-                    <a href="/contact">Contact</a>
+                    <a href="/blog" onclick="route()">Blog</a>
+                    <a href="/contact" onclick="route()">Contact</a>
                 </nav>
             </div>
             <div class="header__underline index-underline"></div>
         </header>
 
-
-        <main class="main__index">
+        <div id="content"></div>
+        <!-- <main class="main__index">
             <section class="hero">
                 <div class="hero__details">
                     <div class="hero__h">
@@ -87,13 +88,15 @@
                     </div>
                 </div>
             </section>
-        </main>
+        </main> -->
 
         <footer>
             <p>Copyright &#64;2025 Nama-Website</p>
         </footer>
     </div>
 
-    <script type="module" src="/js/fix-ui.js"></script>
+    <script src="/js/fix-ui.js"></script>
+    <!-- <script type="module" src="/js/index.js"></script> -->
+    <script src="/js/router.js"></script>
 </body>
 </html>
