@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nama-website</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root">
+        <header class="header-color-text">
+            <div class="header__container">
+                <h1>nama-website</h1>
+                <nav class="header__navbar">
+                    <a href="/" class="header__nav__active">Home</a>
+                    <button class="navbar__feature-button button-like-a">Feature</button>
+                    <div class="navbar__feature-links" style="display: none;">
+                        <a href="/simple-games">Simple Games</a>
+                        <a href="/edu-games">Educational Games</a>
+                        <a href="/tools">Tools</a>
+                    </div>
+                    <a href="/blog">Blog</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
+            <div class="header__underline index-underline"></div>
+        </header>
+
+
+        <main class="main__index">
+            <section class="hero">
+                <div class="hero__details">
+                    <div class="hero__h">
+                        <h3>Play, Learn, and Use Tools in One Website</h3>
+                    </div>
+                    <div class="hero__p">
+                        <p>Come explore exciting games, try out unique tools, and give feedback on how this site can be developed.</p>
+                        <p>Let's go on an adventure!</p>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="/assets/images/hero.png" alt="Play, Learn, and Use Tools in One Website">
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="features__title sub-title">
+                    <h2 class="sub-title__h2">Our Features</h2>
+                    <div class="sub-title__underline index-underline"></div>
+                </div>
+                <div class="feature__cards">
+                    <div class="feature__card sgames-card">
+                        <img src="/assets/images/simple-games-hero.png" alt="simple-games">
+                        <h4>Simple Games</h4>
+                        <button type="button">Open</button>
+                    </div>
+                    <div class="feature__card egames-card">
+                        <img src="/assets/images/edu-games-hero.png" alt="simple-games">
+                        <h4>Educational Games</h4>
+                        <button type="button">Open</button>
+                    </div>
+                    <div class="feature__card tools-card">
+                        <img src="/assets/images/tools-hero.png" alt="simple-games">
+                        <h4>Tools</h4>
+                        <button type="button">Open</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about__title sub-title">
+                    <h2 class="sub-title__h2">What Website Is This?</h2>
+                    <div class="sub-title__underline index-underline"></div>
+                </div>
+                <div class="about__content">
+                    <div class="about__img">
+                        <img src="/assets/images/about.png" alt="about-nama-website">
+                    </div>
+                    <div class="about__details">
+                        <p>Nama-website is a digital space that provides a variety of simple games, educational games, and simple tools that can help you in various daily activities.</p>
+                        <p>Nama-website is a personal project born from our love of games and learning. We experiment and explore to create fun and useful digital content. As time goes by, this website will continue to develop and add new content.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &#64;2025 Nama-Website</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/js/fix-ui.js"></script>
+</body>
+</html>
