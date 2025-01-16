@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* scrollbar-width: thin; */
     box-sizing: border-box;
 }
 
@@ -44,7 +43,7 @@
     --secondary-font: "Roboto", sans-serif;
 
     /* SIZE */
-    --body-margin-inline: 50px;
+    --body-margin-inline: 3.125rem;
 }
 
 /* ||-------- GENERAL STYLE */
@@ -80,47 +79,47 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 16px;
+    padding-block: 1rem;
     margin-inline: var(--body-margin-inline);
 }
 
 .header__menu-button {
     display: none;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     background-color: transparent;
     border: none;
 }
 
 .header__menu-button img {
-    width: 30px;
-    margin-top: 1px;
+    width: 1.875rem;
+    margin-top: 0.063rem;
     filter: invert(13%) sepia(72%) saturate(1555%) hue-rotate(176deg) brightness(94%) contrast(102%);
 }
 
 .header__logo {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .header__navbar {
     display: flex;
     align-items: center;
-    gap: 43px;
+    gap: 2.688rem;
 }
 
 .header__navbar * {
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .header__nav__active {
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: bold;
     text-shadow: 0px 4px 3px var(--index-shadow-color);
 }
 
 .header__underline {
-    width: calc(100% - (2 * var(--body-margin-inline)) 25px);
-    height: 19px;
+    width: calc(100% - (2 * var(--body-margin-inline)) 1.563rem);
+    height: 1.188rem;
     margin-inline: var(--body-margin-inline);
     background-image: url("/assets/images/header-border-bottom.svg");
     background-repeat: no-repeat;
@@ -156,9 +155,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    padding-top: 80px;
-    padding-bottom: 150px;
+    gap: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 9.375rem;
     margin-inline: var(--body-margin-inline);
 }
 
@@ -166,18 +165,18 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    max-width: 775px;
+    gap: 1.25rem;
+    max-width: 48.438rem;
     flex: 1 1;
 }
 
 .hero__h h3 {
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 400;
 }
 
 .hero__p {
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 .hero__image {
@@ -188,15 +187,15 @@ a {
 
 .hero__image img {
     width: 100%;
-    max-width: 757px;
+    max-width: 47.313rem;
     /* margin-block: auto; */
 }
 
 /* ||-------- MAIN || FEATURES */
 .features {
     background-color: var(--index-secondary-2);
-    padding-top: 135px;
-    padding-bottom: 165px;
+    padding-top: 8.438rem;
+    padding-bottom: 10.313rem;
 }
 
 .sub-title {
@@ -205,13 +204,13 @@ a {
 }
 
 .sub-title__h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .sub-title__underline {
     width: 100%;
-    height: 13px;
+    height: 0.813rem;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -221,7 +220,7 @@ a {
 }
 
 .features__title {
-    margin-bottom: 90px;
+    margin-bottom: 5.625rem;
 }
 
 .feature__cards {
@@ -231,17 +230,17 @@ a {
 }
 
 .feature__card {
-    width: 380px;
-    height: 520px;
+    width: 23.75rem;
+    height: 32.5rem;
     background-color: var(--index-white);
     border: solid 5px var(--index-dark);
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px var(--index-shadow-color);
+    border-radius: 0.625rem;
+    box-shadow: 0.625rem 10px 10px var(--index-shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 36px;
+    gap: 2.25rem;
 }
 
 .feature__card img {
@@ -249,16 +248,16 @@ a {
 }
 
 .feature__card h4 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     text-align: center;
 }
 
 .feature__card a {
-    border-radius: 7px;
-    padding-block: 10px;
-    padding-inline: 15px;
-    font-size: 30px;
+    border-radius: 0.438rem;
+    padding-block: 0.625rem;
+    padding-inline: 0.938rem;
+    font-size: 1.875rem;
 }
 
 .sgames-card h4 {
@@ -290,8 +289,8 @@ a {
 
 /* ||-------- MAIN || ABOUT */
 .about {
-    padding-top: 135px;
-    padding-bottom: 200px;
+    padding-top: 8.438rem;
+    padding-bottom: 12.5rem;
     margin-inline: var(--body-margin-inline);
 }
 
@@ -300,15 +299,15 @@ a {
 }
 
 .about__title {
-    margin-bottom: 83px;
+    margin-bottom: 5.188rem;
 }
 
 .about__content {
-    margin-inline: 30px;
+    margin-inline: 1.875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .about__img {
@@ -317,7 +316,7 @@ a {
 
 .about__img img{
     width: 100%;
-    max-width: 580px;
+    max-width: 36.25rem;
 }
 
 .about__details {
@@ -325,11 +324,11 @@ a {
 }
 
 .about__details p {
-    font-size: 23px;
+    font-size: 1.438rem;
 }
 
 .about__details p:first-child {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 /* ||-------- FOOTER */
@@ -337,11 +336,11 @@ footer {
     position: relative;
     /* right: var(--body-margin-inline); */
     width: 100vw;
-    height: 80px;
+    height: 5rem;
     padding-inline: var(--body-margin-inline);
     background-color: var(--index-dark);
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
 
@@ -356,18 +355,18 @@ footer {
 
 @media screen and (max-width: 1440px) {
     .hero__image img {
-        max-width: 600px;
+        max-width: 37.5rem;
     }
     .feature__card {
-        width: 340px;
+        width: 21.25rem;
         /* height: calc((340px / 380px) * 520px); */
-        height: 465px;
-        padding-inline: 20px;
+        height: 29.063rem;
+        padding-inline: 1.25rem;
     }
 
     
     .feature__card h4 {
-        font-size: 29px;
+        font-size: 1.813rem;
     }
 }
 
@@ -375,15 +374,15 @@ footer {
 
 @media screen and (max-width: 1280px) {
     .hero__image img {
-        max-width: 600px;
+        max-width: 37.5rem;
     }
     .hero__image {
         width: 50%;
     }
     .feature__card {
-        width: 280px;
+        width: 17.5rem;
         /* height: calc(520px * (280px / 380px)); */
-        height: 383px;
+        height: 23.938rem;
         justify-content: space-evenly;
         gap: 0;
     }
@@ -391,77 +390,77 @@ footer {
         height: 36%;
     }
     .feature__card a {
-        padding-block: 5px;
-        padding-inline: 10px;
+        padding-block: 0.313rem;
+        padding-inline: 0.625rem;
     }
 
     /* ------- FONT-SIZE */
     .header__logo {
-        font-size: 35px;
+        font-size: 2.188rem;
     }
     .header__navbar * {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .header__nav__active {
-        font-size: 23px;
+        font-size: 1.438rem;
     }
     .hero__h h3 {
-        font-size: 45px;
+        font-size: 2.813rem;
     }
     .hero__p {
-        font-size: 23px;
+        font-size: 1.438rem;
     }
     .sub-title__h2 {
-        font-size: 35px;
+        font-size: 2.188rem;
     }
     .feature__card h4 {
-        font-size: 27px;
+        font-size: 1.688rem;
     }
     .feature__card a {
-        font-size: 27px;
+        font-size: 1.688rem;
     }
     .about__details p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 
 @media screen and (max-width: 1024px) {
     :root {
-        --body-margin-inline: 20px;
+        --body-margin-inline: 1.25rem;
     }
     .hero {
-        gap: 10px;
-        padding-top: 50px;
-        padding-bottom: 100px;
+        gap: 0.625rem;
+        padding-top: 3.125rem;
+        padding-bottom: 6.25rem;
     }
     .header__navbar {
-        gap: 30px;
+        gap: 1.875rem;
     }
     .features {
-        padding-top: 60px;
-        padding-bottom: 100px;
+        padding-top: 3.75rem;
+        padding-bottom: 6.25rem;
     }
     .features__title {
-        margin-bottom: 55px;
+        margin-bottom: 3.438rem;
     }
     .feature__card {
-        width: 220px;
+        width: 13.75rem;
         /* height: calc(520px * (220px / 380px)); */
-        height: 301px;
+        height: 18.813rem;
         justify-content: space-around;
-        padding-block: 20px;
+        padding-block: 1.25rem;
     }
     .about {
-        padding-top: 60px;
-        padding-bottom: 100px;
+        padding-top: 3.75rem;
+        padding-bottom: 6.25rem;
     }
     .about__title {
-        margin-bottom: 55px;
+        margin-bottom: 3.438rem;
     }
     .about__content {
         margin-inline: 0;
-        gap: 20px;
+        gap: 1.25rem;
     }
     .about__img {
         width: 50%;
@@ -469,31 +468,31 @@ footer {
 
     /* ------- FONT-SIZE */
     .header__logo {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .header__navbar * {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     .header__nav__active {
-        font-size: 21px;
+        font-size: 1.313rem;
     }
     .hero__h h3 {
-        font-size: 37px;
+        font-size: 2.313rem;
     }
     .hero__p {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     .sub-title__h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .feature__card h4 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
     .feature__card a {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
     .about__details p {
-        font-size: 17px;
+        font-size: 1.063rem;
     }
 
 }
@@ -502,55 +501,55 @@ footer {
 
 @media screen and (max-width: 768px) {  
     .header__container {
-        padding-block: 8px;
+        padding-block: 0.5rem;
         justify-content: start;
-        gap: 10px;
+        gap: 0.625rem;
     }
     .header__menu-button {
         display: block;
     }
     .header__navbar {
-        /* gap: 30px; */
+        /* gap: 1.875rem; */
         display: none;
     }
     .feature__card {
-        width: 200px;
+        width: 12.5rem;
         /* height: calc(520px * (200px / 380px)); */
-        height: 274px;
-        padding-block: 10px;
+        height: 17.125rem;
+        padding-block: 0.625rem;
     }
 
     /* ------- FONT-SIZE */
     .header__navbar * {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .header__nav__active {
-        font-size: 19px;
+        font-size: 1.188rem;
     }
     .hero__h h3 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     .hero__p {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .sub-title__h2 {
-        font-size: 25px;
+        font-size: 1.563rem;
     }
     .feature__card h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .feature__card a {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .about__details p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 700px) {
     .hero {
-        padding-top: 30px;
-        padding-bottom: 80px;
+        padding-top: 1.875rem;
+        padding-bottom: 5rem;
     }
     .hero__image {
         display: none;
@@ -561,19 +560,19 @@ footer {
         background-size: 65%;
         background-position-x: center;
         background-position-y: 30%;
-        margin-block: 30px;
+        margin-block: 1.875rem;
     }
     .hero {
         background-color: rgba(255, 255, 255, 0.8);
     }
     .hero__details {
         text-align: center;
-        margin-inline: 40px;
+        margin-inline: 2.5rem;
     }
     .feature__card {
-        width: 140px;
+        width: 8.75rem;
         /* height: calc(520px * (140px / 380px)); */
-        height: 192px;
+        height: 12rem;
     }
     .about__img {
         display: none;
@@ -584,7 +583,7 @@ footer {
         background-size: 60%;
         background-position-x: center;
         background-position-y: 65%;
-        margin-block: 30px;
+        margin-block: 1.875rem;
     }
     .about {
         background-color: rgba(255, 255, 255, 0.75);
@@ -595,36 +594,36 @@ footer {
     
     /* ------- FONT-SIZE */
     .feature__card h4 {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .feature__card a {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
 
 @media screen and (max-width: 480px) {
     .hero__details {
-        margin-inline: 15px;
+        margin-inline: 0.938rem;
     }
     .feature__cards {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
     .feature__card {
         /* width: 380px; */
         width: 100%;
-        height: 180px;
+        height: 11.25rem;
 
-        padding-block: 20px;
-        padding-inline: 15px;
+        padding-block: 1.25rem;
+        padding-inline: 0.938rem;
         display: grid;
         grid-template-areas: 
             "img h4"
             "img a";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 5px;
+        gap: 0.313rem;
     }
     .feature__card img {
         grid-area: img;
