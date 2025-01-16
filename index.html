@@ -16,7 +16,10 @@
     <div id="root">
         <header class="header-color-text">
             <div class="header__container">
-                <h1>nama-website</h1>
+                <button class="header__menu-button" type="button">
+                    <img src="/assets/images/hamburger-menu.svg" alt="menu-button">
+                </button>
+                <h1 class="header__logo">nama-website</h1>
                 <nav class="header__navbar">
                     <a href="/" class="header__nav__active" onclick="route()">Home</a>
                     <button class="navbar__feature-button button-like-a">Feature</button>
@@ -33,70 +36,14 @@
         </header>
 
         <div id="content"></div>
-        <!-- <main class="main__index">
-            <section class="hero">
-                <div class="hero__details">
-                    <div class="hero__h">
-                        <h3>Play, Learn, and Use Tools in One Website</h3>
-                    </div>
-                    <div class="hero__p">
-                        <p>Come explore exciting games, try out unique tools, and give feedback on how this site can be developed.</p>
-                        <p>Let's go on an adventure!</p>
-                    </div>
-                </div>
-                <div class="hero__image">
-                    <img src="/assets/images/hero.png" alt="Play, Learn, and Use Tools in One Website">
-                </div>
-            </section>
-
-            <section class="features">
-                <div class="features__title sub-title">
-                    <h2 class="sub-title__h2">Our Features</h2>
-                    <div class="sub-title__underline index-underline"></div>
-                </div>
-                <div class="feature__cards">
-                    <div class="feature__card sgames-card">
-                        <img src="/assets/images/simple-games-hero.png" alt="simple-games">
-                        <h4>Simple Games</h4>
-                        <button type="button">Open</button>
-                    </div>
-                    <div class="feature__card egames-card">
-                        <img src="/assets/images/edu-games-hero.png" alt="simple-games">
-                        <h4>Educational Games</h4>
-                        <button type="button">Open</button>
-                    </div>
-                    <div class="feature__card tools-card">
-                        <img src="/assets/images/tools-hero.png" alt="simple-games">
-                        <h4>Tools</h4>
-                        <button type="button">Open</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about">
-                <div class="about__title sub-title">
-                    <h2 class="sub-title__h2">What Website Is This?</h2>
-                    <div class="sub-title__underline index-underline"></div>
-                </div>
-                <div class="about__content">
-                    <div class="about__img">
-                        <img src="/assets/images/about.png" alt="about-nama-website">
-                    </div>
-                    <div class="about__details">
-                        <p>Nama-website is a digital space that provides a variety of simple games, educational games, and simple tools that can help you in various daily activities.</p>
-                        <p>Nama-website is a personal project born from our love of games and learning. We experiment and explore to create fun and useful digital content. As time goes by, this website will continue to develop and add new content.</p>
-                    </div>
-                </div>
-            </section>
-        </main> -->
 
         <footer>
             <p>Copyright &#64;2025 Nama-Website</p>
         </footer>
     </div>
 
+    <script type="module" src="/js/index.js"></script>
     <script src="/js/fix-ui.js"></script>
-    <!-- <script type="module" src="/js/index.js"></script> -->
     <script src="/js/router.js"></script>
 </body>
 </html>
