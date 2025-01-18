@@ -36,16 +36,18 @@ function fixFeatureText() {
 
 fixNavButtons();
 
-export function fixMaintenancePage() {
-    const mainContainer = document.querySelector('.maintenance-page__container');
-    console.log(mainContainer)
-    if (mainContainer) {
-        mainContainer.style.minHeight = `calc(100vh - ${header.offsetHeight}px - ${footer.offsetHeight}px)`
-
+export function fixNonScrollPage() {
+    const container = document.querySelectorAll('.nonScrollPage');
+    // console.log(container)
+    if (container) {
+        container.forEach(e => {
+            e.style.minHeight = `calc(100vh - ${header.offsetHeight}px - ${footer.offsetHeight}px)`
+        })
     }
+    // console.log(document.querySelectorAll(".nonScrollPage"))
 }
 
-fixMaintenancePage();
+fixNonScrollPage();
 
 export function fixButtonUI() {
     fixfeatureContainerPosition();

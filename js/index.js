@@ -1,6 +1,6 @@
 // import { updateNav } from "./ui.js";
 
-import { fixButtonUI, fixMaintenancePage } from "./fix-ui.js";
+import { fixButtonUI, fixNonScrollPage } from "./fix-ui.js";
 
 
 // let activePage = "home";    // home simple-games edu-games tools blog contact
@@ -30,7 +30,7 @@ function updateNav(activePage) {
         activeLink.classList.add("nav-main__active");
     }
     updateFeatureContainer(false);
-    fixMaintenancePage();
+    fixNonScrollPage();
 }
 
 // navbar - button feature

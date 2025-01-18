@@ -8,16 +8,16 @@
     gap: 1rem;
 }
 
-.maintenance-page__image {
+.maintenance__image {
     height: 30vh;
 }
 
-.maintenance-page__text {
+.maintenance__text {
     font-size: 1rem;
 }
 
 @media screen and (orientation: portrait) {
-    .maintenance-page__image {
+    .maintenance__image {
         width: 40vw;
         height: auto;
     }
