@@ -1,6 +1,6 @@
 // import { updateNav } from "./ui.js";
 
-import { fixfeatureContainerPosition, fixFeatureText } from "./fix-ui.js";
+import { fixButtonUI, fixMaintenancePage } from "./fix-ui.js";
 
 
 // let activePage = "home";    // home simple-games edu-games tools blog contact
@@ -30,6 +30,7 @@ function updateNav(activePage) {
         activeLink.classList.add("nav-main__active");
     }
     updateFeatureContainer(false);
+    fixMaintenancePage();
 }
 
 // navbar - button feature
@@ -39,8 +40,7 @@ const featureText = document.querySelector(".feature-text");
 
 featuresButton.addEventListener("click", () => { 
     updateFeatureContainer(featureContainer.style.display == "none");
-    fixfeatureContainerPosition();
-    fixFeatureText();
+    fixButtonUI();
 })
 
 function updateFeatureContainer(isOpenContainer) {

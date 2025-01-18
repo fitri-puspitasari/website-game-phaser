@@ -40,7 +40,8 @@ const routes = {
 		description: "This is the Tools page",
 	},
 	"/blog": {
-		template: "/templates/blog.html",
+		// template: "/templates/blog.html",
+		template: "/templates/maintenance.html",
 		title: pageTitle + " | Blog",
 		description: "This is the Blog page",
 	},

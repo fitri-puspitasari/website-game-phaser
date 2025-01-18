@@ -1,15 +1,15 @@
 const featuresButton = document.querySelector('.navbar__features-button');
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
+const content = document.querySelector("#content");
 
 function fixFooterPosition() {
-    const header = document.querySelector("header");
-    const footer = document.querySelector("footer");
-    const content = document.querySelector("#content");
     content.style.minHeight = `calc(100vh - ${header.offsetHeight}px - ${footer.offsetHeight}px)`
 }
 
 fixFooterPosition()
 
-export function fixfeatureContainerPosition() {
+function fixfeatureContainerPosition() {
     const featureContainer = document.querySelector('.navbar__feature-container');
     const distanceY = 0;    // px
     featureContainer.style.top = (featuresButton.offsetTop + featuresButton.offsetHeight + distanceY) + "px";
@@ -27,12 +27,27 @@ function fixNavButtons() {
     fixFeatureText();
 }
 
-export function fixFeatureText() {
+function fixFeatureText() {
     const featureText = document.querySelector(".feature-text");
     featureText.style.display = "inline-block";
     featureText.style.width = (featureText.offsetWidth + 10) + 'px';
     featureText.style.textAlign = "center";
 }
 
+fixNavButtons();
 
-fixNavButtons()
+export function fixMaintenancePage() {
+    const mainContainer = document.querySelector('.maintenance-page__container');
+    console.log(mainContainer)
+    if (mainContainer) {
+        mainContainer.style.minHeight = `calc(100vh - ${header.offsetHeight}px - ${footer.offsetHeight}px)`
+
+    }
+}
+
+fixMaintenancePage();
+
+export function fixButtonUI() {
+    fixfeatureContainerPosition();
+    fixFeatureText();
+}
