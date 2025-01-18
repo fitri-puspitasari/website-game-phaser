@@ -1,0 +1,24 @@
+/* @import url("/css/style.css"); */
+
+.maintenance-page__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.maintenance-page__image {
+    height: 30vh;
+}
+
+.maintenance-page__text {
+    font-size: 1rem;
+}
+
+@media screen and (orientation: portrait) {
+    .maintenance-page__image {
+        width: 40vw;
+        height: auto;
+    }
+}
