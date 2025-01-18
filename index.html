@@ -21,15 +21,16 @@
                 </button>
                 <h1 class="header__logo">nama-website</h1>
                 <nav class="header__navbar">
-                    <a href="/" class="header__nav__active" onclick="route()">Home</a>
-                    <button class="navbar__feature-button button-like-a">Feature</button>
-                    <div class="navbar__feature-links" style="display: none;">
-                        <a href="/simple-games" onclick="route()">Simple Games</a>
-                        <a href="/edu-games" onclick="route()">Educational Games</a>
-                        <a href="/tools" onclick="route()">Tools</a>
+                    <a href="/" class="nav-main-link nav-link__home" onclick="route()">Home</a>
+                    <button class="navbar__features-button button-like-a"><span class="feature-text">Feature</span>&#11206</button>
+                    <div class="navbar__feature-container" style="display: none;">
+                    <!-- <div class="navbar__feature-container"> -->
+                        <a href="/simple-games" class="nav-feature-link nav-link__simple-games" onclick="route()">Simple Games</a>
+                        <a href="/edu-games" class="nav-feature-link nav-link__edu-games" onclick="route()">Educational Games</a>
+                        <a href="/tools" class="nav-feature-link nav-link__tools" onclick="route()">Tools</a>
                     </div>
-                    <a href="/blog" onclick="route()">Blog</a>
-                    <a href="/contact" onclick="route()">Contact</a>
+                    <a href="/blog" class="nav-main-link nav-link__blog" onclick="route()">Blog</a>
+                    <a href="/contact" class="nav-main-link nav-link__contact" onclick="route()">Contact</a>
                 </nav>
             </div>
             <div class="header__underline index-underline"></div>
@@ -43,7 +44,7 @@
     </div>
 
     <script type="module" src="/js/index.js"></script>
-    <script src="/js/fix-ui.js"></script>
-    <script src="/js/router.js"></script>
+    <script type="module" src="/js/fix-ui.js"></script>
+    <script type="module" src="/js/router.js"></script>
 </body>
 </html>

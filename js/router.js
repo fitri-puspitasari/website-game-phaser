@@ -1,3 +1,4 @@
+import { updatePage } from "./index.js";
 
 const pageTitle = "nama-website";
 
@@ -72,6 +73,8 @@ const handleLocation = async () => {
 	document.title = route.title;
 	// set the description of the document to the description of the route
 	document.querySelector('meta[name="description"]').setAttribute("content", route.description);
+	// update UI page
+	updatePage(location);
 };
 
 // add an event listener to the window that watches for url changes

@@ -59,6 +59,10 @@ a {
     color: inherit;
 }
 
+button {
+    cursor: pointer;
+}
+
 .button-like-a {
     background-color: transparent;
     border: none;
@@ -105,16 +109,64 @@ a {
     display: flex;
     align-items: center;
     gap: 2.688rem;
+    position: relative;
+    /* justify-content: space-between;
+    width: 334px; */
 }
 
 .header__navbar * {
     font-size: 1.375rem;
 }
 
-.header__nav__active {
+.nav-main-link:hover,
+.feature-text:hover {
+    font-weight: bold;
+    width: initial;
+}
+
+.nav-main__active {
     font-size: 1.625rem;
     font-weight: bold;
     text-shadow: 0px 4px 3px var(--index-shadow-color);
+    pointer-events: none;
+}
+
+.navbar__features-button {
+    padding: 0.25rem 0.5rem;
+}
+
+.features-button__active {
+    background-color: var(--index-main);
+    color: var(--index-white);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.navbar__feature-container {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--index-main);
+    color: var(--index-white);
+    z-index: 10;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-feature-link {
+    font-size: 1rem !important;
+    border-top: solid 1px var(--index-secondary-2);
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-feature-link:first-child {
+    border-top: none;
+}
+
+.nav-feature-link:hover {
+    /* font-size: 1.1rem !important; */
+    color: var(--index-secondary-1);
 }
 
 .header__underline {
@@ -269,6 +321,11 @@ a {
     color: var(--sgames-main);
 }
 
+.sgames-card a:hover {
+    background-color: var(--sgames-main);
+    color: var(--sgames-white);
+}
+
 .egames-card h4 {
     color: var(--egames-main);
 }
@@ -278,6 +335,11 @@ a {
     color: var(--egames-main);
 }
 
+.egames-card a:hover {
+    background-color: var(--egames-main);
+    color: var(--egames-white);
+}
+
 .tools-card h4 {
     color: var(--tools-main);
 }
@@ -285,6 +347,11 @@ a {
 .tools-card a {
     border: solid 3px var(--tools-main);
     color: var(--tools-main);
+}
+
+.tools-card a:hover {
+    background-color: var(--tools-main);
+    color: var(--tools-white);
 }
 
 /* ||-------- MAIN || ABOUT */
@@ -401,7 +468,7 @@ footer {
     .header__navbar * {
         font-size: 1.25rem;
     }
-    .header__nav__active {
+    .nav-main__active {
         font-size: 1.438rem;
     }
     .hero__h h3 {
@@ -473,7 +540,7 @@ footer {
     .header__navbar * {
         font-size: 1.125rem;
     }
-    .header__nav__active {
+    .nav-main__active {
         font-size: 1.313rem;
     }
     .hero__h h3 {
@@ -523,7 +590,7 @@ footer {
     .header__navbar * {
         font-size: 1rem;
     }
-    .header__nav__active {
+    .nav-main__active {
         font-size: 1.188rem;
     }
     .hero__h h3 {
@@ -645,3 +712,11 @@ footer {
     }
 }
 
+
+/* 
+    note z-indez
+
+.navbar__feature-container      z-index: 10;
+
+
+*/
