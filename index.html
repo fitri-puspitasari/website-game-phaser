@@ -17,20 +17,52 @@
         <header class="header-color-text">
             <div class="header__container">
                 <button class="header__menu-button" type="button">
-                    <img src="/assets/images/hamburger-menu.svg" alt="menu-button">
+                    <img class="hamburger-menu__image" src="/assets/images/hamburger-menu.svg" alt="menu-button">
                 </button>
+                
                 <h1 class="header__logo">nama-website</h1>
                 <nav class="header__navbar">
-                    <a href="/" class="nav-main-link nav-link__home" onclick="route()">Home</a>
+                    <div class="navbar__logo-n-close-button">
+                        <!-- <button class="header__menu-button" type="button">
+                            <img class="hamburger-menu__image" src="/assets/images/hamburger-menu.svg" alt="menu-button">
+                        </button>
+                        <h1 class="header__logo">nama-website</h1> -->
+                        <button class="navbar__exit-button" type="button">
+                            <img class="navbar__exit-image" src="/assets/images/exit.svg" alt="exit-button">
+                        </button>
+                        <h1 class="navbar__header__logo">nama-website</h1>
+                    </div>
+
+
+                    <!-- <a href="/" class="nav-main-link nav-link__home" onclick="route()">Home</a>
                     <button class="navbar__features-button button-like-a"><span class="feature-text">Feature</span>&#11206</button>
                     <div class="navbar__feature-container" style="display: none;">
-                    <!-- <div class="navbar__feature-container"> -->
                         <a href="/simple-games" class="nav-feature-link nav-link__simple-games" onclick="route()">Simple Games</a>
                         <a href="/edu-games" class="nav-feature-link nav-link__edu-games" onclick="route()">Educational Games</a>
                         <a href="/tools" class="nav-feature-link nav-link__tools" onclick="route()">Tools</a>
                     </div>
                     <a href="/blog" class="nav-main-link nav-link__blog" onclick="route()">Blog</a>
-                    <a href="/contact" class="nav-main-link nav-link__contact" onclick="route()">Contact</a>
+                    <a href="/contact" class="nav-main-link nav-link__contact" onclick="route()">Contact</a> -->
+
+                    <div class="nav-main-link__container">
+                        <a href="/" class="nav-main-link nav-link__home" onclick="route()">Home</a>
+                    </div>
+                    <!-- <button class="navbar__features-button button-like-a"><span class="feature-text">Feature</span>&#11206</button> -->
+                    <button class="navbar__features-button button-like-a">
+                        <p class="feature-text">Feature</p>
+                        <p class="feature-icon">&#11206</p>
+                    </button>
+                    <div class="navbar__feature-container" style="display: none;">
+                        <a href="/simple-games" class="nav-feature-link nav-link__simple-games" onclick="route()">Simple Games</a>
+                        <a href="/edu-games" class="nav-feature-link nav-link__edu-games" onclick="route()">Educational Games</a>
+                        <a href="/tools" class="nav-feature-link nav-link__tools" onclick="route()">Tools</a>
+                    </div>
+                    <div class="nav-main-link__container">
+                        <a href="/blog" class="nav-main-link nav-link__blog" onclick="route()">Blog</a>
+                    </div>
+                    <div class="nav-main-link__container">
+                        <a href="/contact" class="nav-main-link nav-link__contact" onclick="route()">Contact</a>
+                    </div>
                 </nav>
             </div>
             <div class="header__underline index-underline"></div>

@@ -56,7 +56,7 @@ body {
     font-family: var(--main-font);
     overflow-x: hidden;
     /* width: 100vw; */
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #content {
@@ -98,18 +98,46 @@ button {
     margin-inline: var(--body-margin-inline);
 }
 
-.header__menu-button {
-    display: none;
+.header__menu-button,
+.navbar__exit-button {
     width: 1.875rem;
     height: 1.875rem;
     background-color: transparent;
     border: none;
 }
 
-.header__menu-button img {
-    width: 1.875rem;
-    margin-top: 0.063rem;
+/* .navbar__exit-button {
+    padding: 0.2rem;
+} */
+
+.header__menu-button {
+    display: none;
+}
+
+.hamburger-menu__image,
+.navbar__exit-image {
     filter: invert(13%) sepia(72%) saturate(1555%) hue-rotate(176deg) brightness(94%) contrast(102%);
+}
+
+.header__menu-button:hover {
+    & img {
+        filter: invert(80%) sepia(5%) saturate(3892%) hue-rotate(175deg) brightness(91%) contrast(87%);
+    }
+}
+
+.hamburger-menu__image{
+    width: 100%;
+    margin-top: 0.063rem;
+}
+ 
+.navbar__exit-button:hover {
+    & img {
+        filter: invert(99%) sepia(28%) saturate(4464%) hue-rotate(178deg) brightness(108%) contrast(108%);
+    }
+}
+
+.navbar__exit-image {
+    width: 100%;
 }
 
 .header__logo {
@@ -125,14 +153,29 @@ button {
     width: 334px; */
 }
 
+.navbar__logo-n-close-button {
+    display: none;
+}
+
 .header__navbar * {
     font-size: 1.375rem;
 }
 
 .nav-main-link:hover,
 .feature-text:hover {
-    font-weight: bold;
-    width: initial;
+    font-weight: bold !important;
+    /* width: initial; */
+}
+
+.nav-main-link__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.navbar__features-button > * {
+    /* background-color: pink; */
 }
 
 .nav-main__active {
@@ -143,13 +186,22 @@ button {
 }
 
 .navbar__features-button {
-    padding: 0.25rem 0.5rem;
+    padding: 0.313rem 0.5rem;
+    border-radius: 5px 5px 0px 0px;
+
+    /* width: max-content; */
+    p {
+        display: inline-block;
+    }
 }
 
 .features-button__active {
     background-color: var(--index-main);
     color: var(--index-white);
-    border-radius: 5px 5px 0px 0px;
+}
+
+.feature-text {
+    text-align: center;
 }
 
 .navbar__feature-container {
@@ -176,7 +228,6 @@ button {
 }
 
 .nav-feature-link:hover {
-    /* font-size: 1.1rem !important; */
     color: var(--index-secondary-1);
 }
 
@@ -546,7 +597,7 @@ footer {
 
     /* ------- FONT-SIZE */
     .header__logo {
-        font-size: 1.75rem;
+        font-size: 1.75rem !important;
     }
     .header__navbar * {
         font-size: 1.125rem;
@@ -586,10 +637,48 @@ footer {
     .header__menu-button {
         display: block;
     }
-    .header__navbar {
+    .header__navbar {           /* ----------------- navbar hamburger ----------------- */
         /* gap: 1.875rem; */
-        display: none;
+        /* display: none; */
+        /* opacity: 0; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: 1rem var(--body-margin-inline);
+        flex-direction: column;
+        background-color: var(--index-secondary-1);
+        z-index: 10;
+        border-right: solid 1px var(--index-white);
+        /* transition: all 0.2s ease-in; */
+        /* test */
+        /* background-color: rgba(0, 0, 0, 0.39); */
+        /* display: none; */
+        
     }
+    .navbar__logo-n-close-button {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        /* margin-bottom: 1rem; */
+    }
+    .features-button__active {
+        background-color: transparent;
+        /* color: var(--index-white); */
+    }
+    .navbar__feature-container {
+        background-color: var(--index-secondary-1);
+        color: var(--index-dark);
+        padding: 0.4rem 1rem;
+        border-radius: 0px 5px 5px 0px;
+        border: solid 1px var(--index-white);
+    }
+    .nav-feature-link:hover {
+        color: var(--index-white);
+    }
+    
+
+
     .feature__card {
         width: 12.5rem;
         /* height: calc(520px * (200px / 380px)); */

@@ -1,6 +1,6 @@
 // import { updateNav } from "./ui.js";
 
-import { fixButtonUI, fixNonScrollPage } from "./fix-ui.js";
+import { fixButtonUI, fixNonScrollPage, isHamMenuShow } from "./fix-ui.js";
 
 
 // let activePage = "home";    // home simple-games edu-games tools blog contact
@@ -9,6 +9,7 @@ import { fixButtonUI, fixNonScrollPage } from "./fix-ui.js";
 
 
 
+let isNavbarShow = false;
 
 
 
@@ -31,6 +32,10 @@ function updateNav(activePage) {
     }
     updateFeatureContainer(false);
     fixNonScrollPage();
+    if (isHamMenuShow) {
+        isNavbarShow = false;
+        updateNavbarPopup();
+    }
 }
 
 // navbar - button feature
@@ -45,7 +50,55 @@ featuresButton.addEventListener("click", () => {
 
 function updateFeatureContainer(isOpenContainer) {
     featureContainer.style.display = isOpenContainer ? "flex" : "none";
-    featuresButton.innerHTML = `<span class="feature-text">Feature</span>&#1120${isOpenContainer ? '5' : '6'}`;
+    // featuresButton.innerHTML = `<p class="feature-text">Feature</p><p>&#1120${isOpenContainer ? '5' : '6'}</p>`;
+    const featureIcon = document.querySelector(".feature-icon");
+    if (!isHamMenuShow) {
+        featureIcon.innerHTML = `<p>&#1120${isOpenContainer ? '5' : '6'}</p>`
+    } else {
+        featureIcon.innerHTML = `<p>&#1120${isOpenContainer ? '7' : '8'}</p>`
+    }
+    
     featureText.style.fontWeight = isOpenContainer ? "bold !important" : "normal";
     featuresButton.className = `navbar__features-button button-like-a ${isOpenContainer ? 'features-button__active' : ''}`;
 }
+
+
+const menuButton = document.querySelector(".header__menu-button")
+menuButton.addEventListener("click", function() {
+    isNavbarShow = !isNavbarShow;
+    updateNavbarPopup();
+})
+
+const exitMenuButton = document.querySelector(".navbar__exit-button")
+exitMenuButton.addEventListener("click", function() {
+    isNavbarShow = !isNavbarShow;
+    updateNavbarPopup();
+})
+
+function updateNavbarPopup() {
+    const navbar = document.querySelector(".header__navbar");
+    console.log(isNavbarShow)
+    const widthNavbar = navbar.offsetWidth + "px"
+    console.log(navbar)
+    if (isNavbarShow) {
+        // navbar.style.display = "flex";
+        // navbar.style.opacity = "1";
+        // navbar.style.left = "0";
+        // navbar.style.left = "-" + widthNavbar;
+        // navbar.style.transform = `translateX(${widthNavbar})`;
+        // navbar.style.left = 0
+        navbar.style.transition = "all 0.2s ease-in";
+        navbar.style.transform = `translateX(0)`;
+
+    } else {
+        // navbar.style.display = "none";
+        // navbar.style.opacity = "0";
+        // navbar.style.left = "-" + widthNavbar;
+        navbar.style.transition = "";
+        navbar.style.transform = `translateX(${'-'+widthNavbar})`;
+
+    }
+    fixButtonUI();
+
+}
+
